@@ -1,11 +1,12 @@
-var arr=["images/2.png","images/3.png","images/1.png"];
-var obj=document.getElementById("banner");	
+
 function go()
 {
 	window.setInterval(slider,9000);
 }
 function slider()
 {
+	var arr=["images/2.png","images/3.png","images/1.png"];
+var obj=document.getElementById("banner");	
     var i=parseInt(obj.value,10);
 	if(i<arr.length)
 		obj.src=arr[i];
